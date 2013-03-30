@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="1px" android:paddingBottom="1px" android:paddingLeft="3px" android:paddingRight="3px" android:background="#a0105030">
+    
+    <ImageView android:id="@+id/listrow_momentb" android:scaleType="centerCrop" android:src="@drawable/wavemoment" android:layout_width="35px"
+	 android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+	        android:layout_height="35px"></ImageView>
+    
+    <TextView  
+        android:id="@+id/listrow_title"
+        android:layout_width="wrap_content"
+        android:paddingLeft="52px"
+        android:layout_height="wrap_content" android:textSize="21px" android:lines="1" android:textStyle="bold" android:text="E" android:ellipsize="middle"/>
+
+<TextView
+	    	android:id="@+id/listrow_opened"
+	        android:layout_width="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true" android:visibility="gone"
+	        android:text="O" android:textSize="21px" />
+
+	
+<ImageView android:id="@+id/listrow_moment" android:scaleType="matrix" android:src="@drawable/wavemoment" android:layout_width="wrap_content"
+	        android:layout_marginTop="3px"
+	        android:layout_alignParentLeft="true"
+	        android:layout_height="wrap_content"></ImageView>
+
+	<TextView
+	    	android:id="@+id/listrow_published"
+	        android:layout_width="wrap_content" android:textStyle="bold"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@id/listrow_title"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:text="T" android:textSize="21px" android:paddingLeft="5px" />
+
+<TextView
+	    	android:id="@+id/listrow_momenti"
+	        android:layout_width="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/listrow_title"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true" android:visibility="gone"
+	        android:text="-1" android:textSize="21px" />
+
+</RelativeLayout>
